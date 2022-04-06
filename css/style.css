@@ -1,0 +1,155 @@
+body {
+    text-align: center;
+    padding-top: 50px;
+    background-color: rgb(218, 136, 218);
+}
+
+h1 {
+    color: #2396bd;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#contBotones {
+    border-radius: 50px;
+    width: 500px;
+    height: 500px;
+    background: #2e6cf3;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    font-size: 18px;
+    background-color: #252324;
+    color: #ffffff;
+    border-radius: 50px;
+    border: 6px solid #4806c4;
+    cursor: pointer;
+    transition: .5s;
+    text-align: center;
+
+}
+
+button:hover {
+
+    color: #510461;
+    padding: 12px 10px;
+}
+
+#contFigura {
+    border-radius: 50px;
+    width: 500px;
+    height: 500px;
+    background: #07ca89;
+
+}
+
+#figura {
+    width: 150px;
+    height: 150px;
+    background: #2396bd;
+    margin: 0 auto;
+    margin-top: 140px;
+    transition: .5s;
+}
+
+#figura.circulo {
+    border-radius: 50%;
+    transform: rotate(360deg);
+    background-color: #329e6b;
+}
+
+#figura.rombo {
+    border: 5px solid black;
+    background: #378a37bd;
+    transform: rotate(45deg);
+}
+
+#figura.rectanguloH {
+    border: 3px solid black;
+    transform: rotate(360deg);
+    width: 190px;
+    height: 95px;
+    background-color: #eb1047;
+}
+
+#figura.rectanguloV {
+    border: 4px solid black;
+    height: 190px;
+    width: 90px;
+    background-color: #928a8c;
+    transform: rotate(360deg);
+}
+
+#figura.subir {
+    transition: .5s;
+    transform: translateY(-140PX);
+}
+
+#figura.bajar {
+    border: 3px solid black;
+    transform: rotate(360deg);
+    background-color: #29362b;
+    margin: 0 auto;
+    margin-top: 140px;
+    transition: .5s;
+    transform: translateY(100PX);
+}
+
+#figura.img {
+    border: 3px solid black;
+    transform: rotate(360deg);
+    background-image: url(../img/images.jpg);
+}
+
+#fila {
+    display: flex;
+    justify-content: center;
+}
+
+#contenedorOperaciones {
+    padding: 100px;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid blue;
+    border-radius: 50px;
+
+}
+
+#contenedorOperaciones button {
+    background: blueviolet;
+    border-radius: 25px;
+
+}
+
+#chat {
+    background: #f50a6c;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    right: -300px;
+    top: 20%;
+    transition: .5s;
+}
+
+#chat.active {
+    right: 0;
+}
+
+#btnChat {
+    position: fixed;
+    right: -30px;
+    top: 26%;
+    background: #ffffff;
+    border: 2px solid plum;
+    transform: rotate(-90deg);
+    height: 25px;
+    color: #f50a6c;
+
+}
+
+#btnChat.active {
+    right: 268px;
+}
